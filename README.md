@@ -147,9 +147,9 @@ MongoDb is used as usual like previous scripts as a database. <p>
   <br>
 
   
-  <h3>Sentiment analysis on News </h3>
+  <h3>Sentiment analysis on News</h3>
   
- In this script file news are analyzed according to sentiment based filter.
+ In this script file news are analyzed according to sentiment based filter.<p>
  
       text = 'trump'
       country = ['MX']
