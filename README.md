@@ -1,5 +1,6 @@
-<h3> <u><b>For twitter Streaming </b><u/> </h3>
-<p>
+<h3> <u><b>For twitter Streaming : [twitterStreaming.py] </b><u/> </h3>
+****************************************************************************************************************************************
+<
   Twitter supports a very easy to use API library named TWEEPY for python <p>
   To install tweepy, follow the step: <p><br>
   1. Goto command promt<p>
@@ -27,8 +28,8 @@ Initiate a MongoDb instance to collect data .
  
              stream.filter(track=['salesforce','javascript','python'])
              
-<h3> <u><b>For twitter Parsing </b><u/> </h3>
-
+<h3> <u><b>For twitter Parsing [tweetparsing.py] </b><u/> </h3>
+****************************************************************************************************************************************
 collected tweets are analysed are from <b> twitter.txt</b> in a json format.
 
               import json
@@ -54,7 +55,8 @@ Tweets are mapped accoring to their named entities i.e text,lang,country.
         tweets_by_country[:5].plot(ax=ax, kind='bar', color='blue')
         plt.show()
         
- <h3>Sentiment Analysis on twitter data </h3>
+ <h3>Sentiment Analysis on twitter data [Twitter_data_sentiment_analysis.py] </h3>
+ ***************************************************************************************************************************************
     
   For natural language processing (NLP) textblob  is used :
   
@@ -89,8 +91,9 @@ A pie chart will be plotted to present a trend of tweets:<p>
         plt.show()
         
         
-        
- <H3> NewsAPI News Collection </h3>
+ <br>       
+ <H3> NewsAPI News Collection [newsapi_data_collection.py] </h3>
+ ***************************************************************************************************************************************
  
   Aylien NEWSAPI used here to collects news from various sources.Following libraries are necessry for collecting news using NEWSAPI <p>
           
@@ -110,8 +113,9 @@ To configure the api ,a application is need to be created first to access news f
             language = ['es','fr']
             since = 'NOW-1000DAYS'
             until = 'NOW'
-
-<h3>Live news Streaming </h3>
+<br>
+<h3>Live news Streaming [live_news_streaming.py] </h3>
+****************************************************************************************************************************************
 Live news are streamed here. <p>
 Search criteria can be following to retrieve perticular filter based news:
   
@@ -141,13 +145,14 @@ Search criteria can be following to retrieve perticular filter based news:
       print('------------')
       time.sleep(5)
 At the time of running this perticular  script in python power shell following command is used to store the streamed news in a text file.<p>
-    <b> project path>> python live_news_streaming.py > news.text <b/>
+    <b> project path>> python live_news_streaming.py > news.text</b>
       
 MongoDb is used as usual like previous scripts as a database. <p>
   <br>
 
   
-  <h3>Sentiment analysis on News</h3>
+  <h3>Sentiment analysis on News [news_sentiment_analysis.py] </h3>
+  **************************************************************************************************************************************
   
  In this script file news are analyzed according to sentiment based filter.<p>
  
