@@ -104,12 +104,15 @@ To configure the api ,a application is need to be created first to access news f
           # Configure API key authorization: app_key
           aylien_news_api.configuration.api_key['X-AYLIEN-NewsAPI-Application-Key'] = ''
           
- Search criteria is given is following code snippet:
+ Search criteria is given is following code snippet to retrieve news in different languages:
  
             text = '"JAVASCRIPT" AND "PYTHON"'
             language = ['es','fr']
             since = 'NOW-1000DAYS'
             until = 'NOW'
+
+<h3>Live news Streaming </h3>
+
 
 
 
