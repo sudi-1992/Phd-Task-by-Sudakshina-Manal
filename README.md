@@ -87,6 +87,31 @@ A pie chart will be plotted to present a trend of tweets:<p>
         plt.axis('equal')
         plt.tight_layout()
         plt.show()
+        
+        
+        
+ <H3> NewsAPI News Collection </h3>
+ 
+  Aylien NEWSAPI used here to collects news from various sources.Following libraries are necessry for collecting news using NEWSAPI <p>
+          
+          import aylien_news_api
+          from aylien_news_api.rest import ApiException
+          
+MongoDb is used as a database to store collected news.For this a new client instance of MongoDB is initiated.<p>
+To configure the api ,a application is need to be created first to access news from Aylien: 
+  
+          aylien_news_api.configuration.api_key['X-AYLIEN-NewsAPI-Application-ID'] = ''
+          # Configure API key authorization: app_key
+          aylien_news_api.configuration.api_key['X-AYLIEN-NewsAPI-Application-Key'] = ''
+          
+ Search criteria is given is following code snippet:
+ 
+            text = '"JAVASCRIPT" AND "PYTHON"'
+            language = ['es','fr']
+            since = 'NOW-1000DAYS'
+            until = 'NOW'
+
+
 
 
 
