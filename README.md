@@ -1,6 +1,5 @@
 <h3> <u><b>For twitter Streaming : [twitterStreaming.py] </b><u/> </h3>
-****************************************************************************************************************************************
-<
+
   Twitter supports a very easy to use API library named TWEEPY for python <p>
   To install tweepy, follow the step: <p><br>
   1. Goto command promt<p>
@@ -29,7 +28,6 @@ Initiate a MongoDb instance to collect data .
              stream.filter(track=['salesforce','javascript','python'])
              
 <h3> <u><b>For twitter Parsing [tweetparsing.py] </b><u/> </h3>
-****************************************************************************************************************************************
 collected tweets are analysed are from <b> twitter.txt</b> in a json format.
 
               import json
@@ -56,7 +54,6 @@ Tweets are mapped accoring to their named entities i.e text,lang,country.
         plt.show()
         
  <h3>Sentiment Analysis on twitter data [Twitter_data_sentiment_analysis.py] </h3>
- ***************************************************************************************************************************************
     
   For natural language processing (NLP) textblob  is used :
   
@@ -93,7 +90,6 @@ A pie chart will be plotted to present a trend of tweets:<p>
         
  <br>       
  <H3> NewsAPI News Collection [newsapi_data_collection.py] </h3>
- ***************************************************************************************************************************************
  
   Aylien NEWSAPI used here to collects news from various sources.Following libraries are necessry for collecting news using NEWSAPI <p>
           
@@ -115,7 +111,7 @@ To configure the api ,a application is need to be created first to access news f
             until = 'NOW'
 <br>
 <h3>Live news Streaming [live_news_streaming.py] </h3>
-****************************************************************************************************************************************
+
 Live news are streamed here. <p>
 Search criteria can be following to retrieve perticular filter based news:
   
@@ -152,7 +148,6 @@ MongoDb is used as usual like previous scripts as a database. <p>
 
   
   <h3>Sentiment analysis on News [news_sentiment_analysis.py] </h3>
-  **************************************************************************************************************************************
   
  In this script file news are analyzed according to sentiment based filter.<p>
  
@@ -167,11 +162,10 @@ Results printed in console in json format according to their sentiment stated ab
   <p>
   <h2>NOTE:</h2>
   <p>
-  **I did not find any satisfactory source to plot the sentiments in a graph for collected news<p>
-  **Tried a lot in different news api library like graphapi for facebook, newsapi for google news etc.<p>
-  ** Due to non availability of resourses in news api  I could not fetched news in csv or text file during this short period of time.<p>
+ ** <i>Due to non availability of comprehensive news resourse ,the analysis of the news sentiments remains incomplete.The codes generated errors which could not be rectified in the deadline specified .</i>
   
-  ********************************************************************************************************
+<p>
+  ** <i> Heroku web application setup is also incomplete due to this reason.</i>
 
 
 
