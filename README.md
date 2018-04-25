@@ -66,7 +66,7 @@ Tweets are mapped accoring to their named entities i.e text,lang,country.
             searchTerm = input("enter keyword/hashtag to search about:") : <i>IPL</i>
             noOfSearchTerms = int(input("enter how many tweets to analyze:"))<i> 00</i>
             
-Sentiment analysis are performed based on positive,negetive,nautral tweets.<p>
+Sentiment analysis are performed based on positive,negetive,neutral tweets.<p>
 A pie chart will be plotted to present a trend of tweets:<p>
   
           print("How people are reacting " + searchTerm + " by analyzing " + str(noOfSearchTerms) + " Tweets.")
@@ -112,6 +112,37 @@ To configure the api ,a application is need to be created first to access news f
             until = 'NOW'
 
 <h3>Live news Streaming </h3>
+Live news are streamed here. <p>
+Search criteria can be following to retrieve perticular filter based news:
+  
+     params = {
+    'title': 'Apple OR Amazon OR Facebook OR PayPal OR Microsoft OR Ebay OR Cisco OR Netflix OR IBM',
+    'language': ['en','fr','de'],
+    'published_at_start': 'NOW-24HOUR',
+    'published_at_end': 'NOW',
+    'cursor': '*',
+    'per_page': 5,
+    'sort_by': 'published_at',
+    'sort_direction': 'desc'
+  }
+  
+  News will be printed in the following manner: <p>
+
+      print('************')
+      print("Fetched %d stories which were published between %s and %s" %
+        (len(stories), params['published_at_start'], params['published_at_end']))
+
+      if len(stories) > 0:
+        last_fetched_at = stories[0].published_at + datetime.timedelta(seconds=1)
+        params['published_at_start'] = last_fetched_at.isoformat()[:-6] + 'Z'
+        params['cursor'] = '*'
+
+      print('Sleep for 5 seconds until next poll...')
+      print('------------')
+      time.sleep(5)
+At the time of running this perticular  script in python power shell following command is used to store the streamed news in a text file.<p>
+    <b> project path>> python live_news_streaming.py > news.text <b/>
+
 
 
 
