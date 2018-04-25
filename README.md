@@ -167,6 +167,9 @@ Results printed in console in json format according to their sentiment stated ab
 <p>
   ** <i> Heroku web application setup is also incomplete due to this reason.</i>
 
+ <h2>References:</h2>
+ <i>http://blog.aylien.com</i>
+ <i>www.youtube.com</i>
 
 
 
