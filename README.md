@@ -68,7 +68,7 @@ Tweets are mapped accoring to their named entities i.e text,lang,country.
 Sentiment analysis are performed based on positive,negetive,neutral tweets.<p>
 A pie chart will be plotted to present a trend of tweets:<p>
   
-          print("How people are reacting " + searchTerm + " by analyzing " + str(noOfSearchTerms) + " Tweets.")
+        print("How people are reacting " + searchTerm + " by analyzing " + str(noOfSearchTerms) + " Tweets.")
 
         if (polarity == 0):
          print("Neutral")
@@ -168,7 +168,7 @@ Results printed in console in json format according to their sentiment stated ab
   ** <i> Heroku web application setup is also incomplete due to this reason.</i>
 
  <h2>References:</h2>
- <i>http://blog.aylien.com</i>
+ <i>http://blog.aylien.com</i><p>
  <i>www.youtube.com</i>
 
 
