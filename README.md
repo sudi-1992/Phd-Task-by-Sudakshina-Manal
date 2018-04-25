@@ -142,6 +142,34 @@ Search criteria can be following to retrieve perticular filter based news:
       time.sleep(5)
 At the time of running this perticular  script in python power shell following command is used to store the streamed news in a text file.<p>
     <b> project path>> python live_news_streaming.py > news.text <b/>
+      
+MongoDb is used as usual like previous scripts as a database. <p>
+  <br>
+
+  
+  <h3>Sentiment analysis on News </h3>
+  
+ In this script file news are analyzed according to sentiment based filter.
+ 
+      text = 'trump'
+      country = ['MX']
+      sentiment = 'negative'
+      since = 'NOW-100DAYS'
+      until = 'NOW'
+Results printed in console in json format according to their sentiment stated above. <p>
+  
+ <p>
+  <p>
+  <h2>NOTE:</h2>
+  <p>
+  **I did not find any satisfactory source to plot the sentiments in a graph for collected news<p>
+  **Tried a lot in different news api library like graphapi for facebook, newsapi for google news etc.<p>
+  ** Due to non availability of resourses in news api  I could not fetched news in csv or text file during this short period of time.<p>
+  
+  ********************************************************************************************************
+
+
+
 
 
 
