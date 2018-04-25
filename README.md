@@ -66,7 +66,30 @@ Tweets are mapped accoring to their named entities i.e text,lang,country.
             searchTerm = input("enter keyword/hashtag to search about:") : <i>IPL</i>
             noOfSearchTerms = int(input("enter how many tweets to analyze:"))<i> 00</i>
             
-            
+Sentiment analysis are performed based on positive,negetive,nautral tweets.<p>
+A pie chart will be plotted to present a trend of tweets:<p>
+  
+          print("How people are reacting " + searchTerm + " by analyzing " + str(noOfSearchTerms) + " Tweets.")
+
+        if (polarity == 0):
+         print("Neutral")
+        elif (polarity < 0):
+         print("negetive")
+        elif (polarity > 0):
+         print("positive")
+
+        labels = ['Positive ['+str(positive)+'%]' , 'Neutral [' +str(neutral) +'%]' ,'Negetive ['+str(negetive)+'%] ']
+        sizes = [positive,neutral,negetive]
+        colors = ['yellowgreen','gold' , 'red']
+        patches, texts = plt.pie(sizes,colors=colors, startangle = 90)
+        plt.legend(patches, labels, loc = "best")
+        plt.title('how are you reacting on '+searchTerm+' by analyzing '+str(noOfSearchTerms)+' Tweets.')
+        plt.axis('equal')
+        plt.tight_layout()
+        plt.show()
+
+
+
 
 
 
